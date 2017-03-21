@@ -1,0 +1,30 @@
+{
+  "name": "generator-cathay",
+  "version": "0.0.1",
+  "description": "yeoman gernerator for cathay apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnnychen/generator-cathay.git"
+  },
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman",
+    "scaffold",
+    "yeoman-generator"
+  ],
+  "author": "johnnychen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnnychen/generator-cathay/issues"
+  },
+  "homepage": "https://github.com/johnnychen/generator-cathay#readme",
+  "devDependencies": {
+    "yeoman-generator": "^1.1.1"
+  }
+}

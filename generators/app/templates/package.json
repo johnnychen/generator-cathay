@@ -1,0 +1,43 @@
+{
+  "name": "<%= name %>",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "EGG_SERVER_ENV=prod node index.js",
+    "staging": "EGG_SERVER_ENV=test node index.js",
+    "dev": "egg-bin dev --port=8001",
+    "debug": "egg-bin debug",
+    "lint": "eslint --ext .js .",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test -r intelli-espower-loader",
+    "cov": "egg-bin cov -r  intelli-espower-loader",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "dependencies": {
+    "egg": "1.0.0",
+    "egg-mysql": "2.0.0",
+    "egg-view-nunjucks": "^2.0.0",
+    "moment": "^2.16.0"
+  },
+  "devDependencies": {
+    "atool-build": "^0.9.0",
+    "autod": "^2.7.1",
+    "cheerio": "^0.22.0",
+    "egg-bin": "^1.7.0",
+    "egg-mock": "^1.2.0",
+    "eslint": "^3.10.2",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-config-egg": "^3.2.0",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-import": "^1.8.1",
+    "eslint-plugin-jsx-a11y": "^1.4.2",
+    "expect": "^1.20.1",
+    "intelli-espower-loader": "^1.0.1",
+    "jstransform": "^11.0.3",
+    "power-assert": "^1.4.2",
+    "pre-commit": "1.x",
+    "supertest": "^2.0.1"
+  },
+  "pre-commit": []
+}
