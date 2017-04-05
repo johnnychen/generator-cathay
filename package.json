@@ -1,6 +1,6 @@
 {
   "name": "generator-cathay",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "yeoman gernerator for cathay apps",
   "main": "index.js",
   "scripts": {
