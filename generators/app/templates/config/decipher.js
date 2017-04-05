@@ -1,6 +1,6 @@
 let crypto = require('crypto');
 //解密
-function decipher(encrypted){
+function decipher(encrypted) {
     var algorithm = 'rc4';
     var key = "helloCathay";
     var decrypted = "";

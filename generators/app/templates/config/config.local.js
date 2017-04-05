@@ -1,32 +1,15 @@
 'use strict';
 
-// only merge in local develop mode
-exports.news = {
-    // pageSize: 10,
-};
-
-exports.verifyCode = {
-    //timeout: 3600 * 24 *30
-    timeout: 60 
+exports.DD_CONFIG = {
+    corpId: "dinge0e69ed313daa460",
+    secret: "sH_JdRrkgRvmJ5B9_RPjAM51hgT9cXhxCl0-_kUDY5_VOuhPX_PbIoKsigoyEqLd",
+    studySignAgentId: "54672742",
+    nonceStr: "123456"
 }
 
-
-exports.mysql = {
-    // 单数据库信息配置
-    client: {
-        // host
-        host: '10.164.50.22',
-        // 端口号
-        port: '3300',
-        // 用户名
-        user: 'DBSA1',
-        // 密码
-        password: 'DBSA1',
-        // 数据库名
-        database: 'cathay_employee',
-    },
-    // 是否加载到 app 上，默认开启
-    app: true,
-    // 是否加载到 agent 上，默认关闭
-    agent: false,
+exports.mongoose = {
+    url: 'mongodb://127.0.0.1:27017/attendance-book2',
+    options: {}
 };
+
+exports.STATIC_HOST = 'http://localhost:7777';

@@ -1,0 +1,14 @@
+{% extends "./layout.nj" %}
+
+
+        {% block content %}
+
+<div id="root"></div>
+
+
+<script src="http://g.alicdn.com/dingding/open-develop/1.0.0/dingtalk.js"></script>
+<script src="{{STATIC_HOST}}/public/detail.js?t=1"></script>
+
+        {% endblock %}
+
+

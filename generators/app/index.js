@@ -16,13 +16,8 @@ module.exports = class extends Generator {
             name: 'name',
             message: 'Your project name',
             default: this.appname // Default to current folder name
-        }, {
-            type: 'confirm',
-            name: 'cool',
-            message: 'Would you like to enable the Cool feature?'
         }]).then((answers) => {
             this.log('app name', answers.name);
-            this.log('cool feature', answers.cool);
 
             this.answers = answers;
         });
@@ -35,10 +30,18 @@ module.exports = class extends Generator {
             this.destinationPath('./'),
             {name: this.answers.name}
         );
+        // Copy all dotfiles
+        this.fs.copy(
+            this.templatePath('./**/.*'),
+            this.destinationRoot('./')
+        );
     }
 
 
     install() {
         this.spawnCommand('cnpm', ['install']);
+        this.spawnCommand('cnpm', ['install'], {
+            cwd: './static/'
+        });
     }
 };

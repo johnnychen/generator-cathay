@@ -1,13 +1,5 @@
 'use strict';
 
-// only merge in local develop mode
-exports.news = {
-    // pageSize: 10,
-};
-
-exports.verifyCode = {
-    timeout: 60
-}
 
 exports.mysql = {
     // 单数据库信息配置

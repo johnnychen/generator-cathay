@@ -2,21 +2,6 @@
 
 let decipher = require('./decipher')
 
-// only merge in local develop mode
-exports.news = {
-  // pageSize: 10,
-};
-
-exports.verifyCode = {
-    timeout: 60
-}
-
-
-exports.logger = {
-    level: 'INFO',
-};
-
-
 exports.mysql = {
     // 单数据库信息配置
     client: {
@@ -36,3 +21,5 @@ exports.mysql = {
     // 是否加载到 agent 上，默认关闭
     agent: false,
 };
+
+exports.STATIC_HOST = '';
