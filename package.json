@@ -1,6 +1,6 @@
 {
   "name": "generator-cathay",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "yeoman gernerator for cathay apps",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,7 @@
     "url": "https://github.com/johnnychen/generator-cathay/issues"
   },
   "homepage": "https://github.com/johnnychen/generator-cathay#readme",
-  "devDependencies": {
+  "dependencies": {
     "yeoman-generator": "^1.1.1"
   }
 }
